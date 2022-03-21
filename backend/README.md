@@ -16,13 +16,13 @@ In the project directory, you can start the api with:
 
 The project is dependant on MongoDB Atlas and will require the following `env` variables to run
 `
-### MONGO_DB
-### MONGO_USER
-### MONGO_PASS
+#### MONGO_DB
+#### MONGO_USER
+#### MONGO_PASS
 `
 
 ## Available Endpoints
 
-`/`           - home directory
-`/event/:id`  - single event listing
-`/events`     - all available events
+- `/`               - home directory
+- `/api/event/:id`  - single event listing
+- `/api/events`     - all available events
