@@ -34,9 +34,9 @@ function EventPage() {
   }, [])
 
   return (
-    <>
+    <Layout>
       {event.title ? (
-        <Layout>
+        <>
           <StyledHeading>{event.title}</StyledHeading>
           <StyledEventLabel>
             <StyledText>{event.description}</StyledText>
@@ -52,9 +52,9 @@ function EventPage() {
           <StyledEventLabel>
             <StyledEventItem><strong>Type:</strong> {event.isVirtual ? 'Virtual' : 'In Person'}</StyledEventItem>
           </StyledEventLabel>
-        </Layout>
+        </>
       ) : 'Loading ....'}
-    </>
+    </Layout>
   )
 }
 

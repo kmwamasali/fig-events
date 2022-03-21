@@ -1,5 +1,5 @@
-export default function fetchEvents(name) {
-  const url = `http://localhost:8000/api/event${name ? '/'+name : 's'}`
+export default function fetchEvents(id) {
+  const url = `http://localhost:8000/api/event${id ? '/'+id : 's'}`
 
   return new Promise((resolve) =>
     fetch(url)

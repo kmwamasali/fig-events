@@ -16,8 +16,8 @@ export const fetchEventsData = createAsyncThunk(
 
 export const fetchEventData = createAsyncThunk(
   'events/fetchEventData',
-  async (name) => {
-    const response = await fetchEvents(name);
+  async (id) => {
+    const response = await fetchEvents(id);
     return response.data;
   }
 )

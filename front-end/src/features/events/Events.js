@@ -28,13 +28,13 @@ function Events() {
   }, [])
 
   const eventsList = events.map(event => {
-      const url = `/event/${event.title}`;
+      const url = `/event/${event._id}`;
       return (
-        <StyledEvent key={event.date}>
+        <StyledEvent key={event._id}>
           <StyledEventItem><a href={url}>{event.title}</a></StyledEventItem>
           <StyledEventItem>{event.category}</StyledEventItem>
           <StyledEventItem>{event.date.slice(0,10)}</StyledEventItem>
-          <StyledEventItem>{event.isVirtual ? 'online' : 'In-person'}</StyledEventItem>
+          <StyledEventItem>{event.isVirtual ? 'Online' : 'In-person'}</StyledEventItem>
           <StyledEventItem>{event.address}</StyledEventItem>
         </StyledEvent>
       )
@@ -50,7 +50,7 @@ function Events() {
         <StyledEventItem onClick={() => dispatch(sortEvents('isVirtual'))}>Is Virtual</StyledEventItem>
         <StyledEventItem>Location</StyledEventItem>
       </StyledEvent>
-      {eventsList}
+      {(events.length > 0) ? eventsList : 'Loading ...'}
     </>
   )
 }

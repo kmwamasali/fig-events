@@ -20,6 +20,7 @@ router.get('/event/:id', (req, res) => {
 
     res.send(event)
   });
-})
+});
+//TODOS: Make RESTful
 
 module.exports = router;
