@@ -20,3 +20,9 @@ The project is dependant on MongoDB Atlas and will require the following `env` v
 ### MONGO_USER
 ### MONGO_PASS
 `
+
+## Available Endpoints
+
+`/`           - home directory
+`/event/:id`  - single event listing
+`/events`     - all available events
