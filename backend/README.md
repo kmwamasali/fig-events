@@ -4,8 +4,8 @@
 
 This project was built with 
 - [NodeJS](https://nodejs.dev/).
-- [ExpressJS] (https://expressjs.com/)
-- [Mongoose] for MongoDB (https://mongoosejs.com/)
+- [ExpressJS](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/) (MongoDB Atlas)
 
 ## Available Scripts
 
